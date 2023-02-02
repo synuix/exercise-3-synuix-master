@@ -10,21 +10,21 @@ section, header, nav ul, blockquote {
   width: 900px;
   margin: auto;
 }
-/* replace this comment with a selector that targets all h2 elements on both pages */ {
+h2 {
   color: #387a1e;
 }
-/* all the anchors */ {
+a {
   color: #e2ffbf;
 }
 
 /* ------- HEADER ------- */
-/* the header group of content */ {
+header {
   position: relative;
 }
-/* the logo in the header */ {
+header > img {
   margin: 20px;
 }
-/* the call-to-action in the header */ {
+header > p {
   position: absolute;
   right: 0px;
   top: 50%;
@@ -34,28 +34,28 @@ section, header, nav ul, blockquote {
   display: inline-block;
   margin: 0;
 }
-/* the anchor in the call-to-action */ {
+header p a:only-child {
   color: #387a1e;
 }
 
 /* ------- NAVIGATION ------- */
-/* the navigation group of content */ {
+nav > ul {
   background-color: #5ca92c;
   color: white;
 }
-/* the list in the navigation */ {
+nav ul {
   list-style-type: none;
 }
-/* the list items in the navigation */ {
+nav ul li {
   display: inline-block;
   padding: 20px 40px;
 }
-/* the anchor in the navigation */ {
+nav ul li a {
   color: #e2ffbf;
 }
 
 /* ------- CALL TO ACTION ------- */
-/* the call-to-action group of content at the bottom of the page */ {
+section.cta {
   background-color: #5ca92c;
   width: 100%;
   padding: 20px;
@@ -63,11 +63,11 @@ section, header, nav ul, blockquote {
   text-align: center;
   clear: right;
 }
-/* the heading inside the call-to-action group*/ {
+section.cta h2 {
   color: white;
 }
 /* ------- FOOTER ------- */
-/* the footer group of content */ {
+footer small {
   background-color: #292929;
   text-align: center;
   color: white;
@@ -77,7 +77,7 @@ section, header, nav ul, blockquote {
 /* ======== HOME PAGE STYLES ========= */
 
 /* ------- HERO ------- */
-/* the hero group of content */ {
+section.hero {
   background-image: url(images/mowing-lawn.jpg);
   background-size: cover;
   padding: 150px;
@@ -85,64 +85,64 @@ section, header, nav ul, blockquote {
   width: 100%;
   text-align: center;
 }
-/* the heading in the hero group */ {
+section.hero h1 {
   color: white;
   font-size: 48px;
 }
 
 /* ------- ABOUT ------- */
-/* the group of content between the hero and the quotes */  {
+section.home-about  {
   padding: 40px 0;
 }
 
 /* ------- QUOTES ------- */
-/* the groups of content that include the quotes */ {
+blockquote {
   background-color: lightgray;
   padding: 60px;
   width: 900px;
   margin: 0 auto 40px auto;
   text-align: center;
 }
-/* the quotes */ {
+blockquote q {
   line-height: 1.6;
 }
-/* the paragraphs in the quote group */ {
+blockquote p {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
 }
 
 /* ======== ABOUT PAGE STYLES ========= */
-/* the about page heading */ {
+section > h1 {
   font-size: 32px;
 }
-/* the section about the founder */ {
+section.founder {
   padding: 20px 40px 20px 0;
   overflow: hidden;
   background-color: lightgray;
   margin: 40px auto;
 }
-/* the figure element in the section about the founder */ {
+section.founder figure {
   float: left;
   text-align: center;
   width: 50%;
 }
-/* the section about the team */ {
+section.team {
   clear: left;
   padding: 20px 0 20px 40px;
   overflow: hidden;
   background-color: lightgray;
 }
-/* the figure element in the section about the team */ {
+section.team figure {
   float: right;
   text-align: center;
   width: 50%;
 }
-/* the images*/ {
+section.team img {
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   width: 100%;
 }
-/* the image captions */ {
+section.team figcaption {
   font-style: italic;
 }
